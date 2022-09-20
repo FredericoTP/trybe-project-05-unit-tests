@@ -61,7 +61,7 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     // ```
 
     let objetoRetornado = createMenu();
-    expect(typeof createMenu().fetchMenu()).toBe('function');
+    expect(typeof createMenu().fetchMenu).toBe('function');
 
 
     // TESTE 2: Verifique se 'objetoRetornado.fetchMenu()' retorna um objeto cujas chaves são somente `food` e `drink`, 
@@ -92,7 +92,7 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     // objetoRetornado.consumption // Retorno: []
     // ```
 
-    
+    expect(objetoRetornado.consumption).toEqual([]);
 
     // Agora faça o PASSO 2 no arquivo `src/restaurant.js`.
     // --------------------------------------------------------------------------------------
