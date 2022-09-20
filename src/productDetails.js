@@ -42,4 +42,6 @@ const productDetails = (firstProduct, secondProduct) => [
   },
 ];
 
+// console.log(productDetails('bala', 'bolo'));
+
 module.exports = productDetails;
