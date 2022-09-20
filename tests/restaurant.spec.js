@@ -106,6 +106,9 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     // objetoRetornado.consumption // Retorno: ["coxinha"]
     // ```
     
+    const objetoRetornadoTwo = createMenu({ biscoito: 'morango', pastel: 'pizza'});
+    objetoRetornadoTwo.order('coxinha');
+    expect(objetoRetornadoTwo.consumption).toEqual(['coxinha']);
 
     // Agora faça o PASSO 3 no arquivo `src/restaurant.js`.
     // --------------------------------------------------------------------------------------
