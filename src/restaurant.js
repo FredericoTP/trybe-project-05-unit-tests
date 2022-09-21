@@ -100,11 +100,24 @@ const createMenu = (object) => {
     fetchMenu: () => object,
     consumption: [],
     order: (string) => restaurantMenu.consumption.push(string),
+    pay: () => {
+      let result = 0;
+      const consumo = restaurantMenu.consumption;
+      for (let index = 0; index < consumo.length; index += 1) {
+        if (consumo[index] === 'coxinha') {
+          result += 10;
+        } else {
+          result += 5;
+        }
+      }
+
+      return result + result * 0.1;
+    },
   };
 
   return restaurantMenu;
 };
 
-// console.log(createMenu());
+// console.log(restaurantMenu);
 
 module.exports = createMenu;

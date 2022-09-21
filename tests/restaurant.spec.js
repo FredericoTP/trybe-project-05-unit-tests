@@ -153,7 +153,14 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     // objetoRetornado.order('coxinha');
     // objetoRetornado.pay() // Retorno: somaDosPreçosDosPedidos
     // ```
-  
+    
+    const menu = createMenu({food: {coxinha: 10}, drink: {agua: 5}});
+    menu.order('coxinha');
+    menu.order('agua');
+    menu.order('coxinha');
+    expect(menu.pay()).toBe(27.5);
+
+
     // Agora faça o PASSO 4 no arquivo `src/restaurant.js`.
   });
 });
