@@ -122,8 +122,11 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     // objetoRetornado.consumption // Retorno: ["coxinha", "agua", "sopa", "sashimi"]
     // ```
 
-    
-
+    const objetoRetornadoThree = createMenu({refrigerante: 'guaraná', pizza: 'calabresa'});
+    objetoRetornadoThree.order('suco');
+    objetoRetornadoThree.order('caipirinha');
+    objetoRetornadoThree.order('refrigerante');
+    expect(objetoRetornadoThree.consumption).toEqual(['suco', 'caipirinha', 'refrigerante']);
 
     // Agora faça o TESTE 7 deste arquivo.
     // --------------------------------------------------------------------------------------
@@ -136,7 +139,9 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     // objetoRetornado.consumption // Retorno: ['coxinha', 'agua', 'coxinha']
     // ```
 
-    
+    objetoRetornadoThree.order('suco');
+    objetoRetornadoThree.order('suco');
+    expect(objetoRetornadoThree.consumption).toEqual(['suco', 'caipirinha', 'refrigerante', 'suco', 'suco']);
 
     // Agora faça o TESTE 8 deste arquivo.
     // --------------------------------------------------------------------------------------
