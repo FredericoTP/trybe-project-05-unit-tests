@@ -1,5 +1,3 @@
-# :construction: README em construção ! :construction:
-
 # :computer: Trybe-05-Project-Unit-Tests :computer:
 
 Nesse projeto implementei várias funções e/ou testes unitários para garantir que as implementações das funções estão corretas.
@@ -241,12 +239,11 @@ Na implementação dos testes foi utilizado o módulo Jest do NodeJS.
 </details>
 
 </details>
-<br />
 
 ## 2- Nota do Projeto
 
 ## 100% :heavy_check_mark:
 
-<br />
+![Project-Unit-Tests](https://github.com/FredericoTP/trybe-project-05-unit-tests/blob/main/images/testes-unit%C3%A1rios-grade.png?raw=true)
 
-## 3- Preview
+<br />
